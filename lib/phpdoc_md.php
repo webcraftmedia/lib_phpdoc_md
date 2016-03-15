@@ -2,7 +2,7 @@
 class phpdoc_md {
     public static function run($inpath,$outpath){
         $named = array(
-            'lt' => '%c.md',
+            'lt' => '%c',
             'index' => 'ApiIndex.md',
         );
 
