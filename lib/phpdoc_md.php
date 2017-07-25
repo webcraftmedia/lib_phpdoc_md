@@ -1,6 +1,8 @@
 <?php
 class phpdoc_md {
     public static function run($inpath,$outpath){
+        if (!file_exists($outpath->SERVERPATH())) {
+            mkdir($outpath->SERVERPATH(), 0777, true);}
         $named = array(
             'lt' => '%c',
             'index' => 'ApiIndex.md',
